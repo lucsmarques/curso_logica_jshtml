@@ -6,19 +6,38 @@
 
 
 <script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function escreveNaTela(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
     // alert("Oi.")
     // document.write("A idade do Flávio é: " + (2023 - 1987)/2 + "<br>");
-    // document.write("A média das idade de Flávio é: " + (20+30+10)/3)
+    // document.write("A média das idade de Flávio é: " + (20+30+10)/3);
 
 
     var ano = 2023;
 
-    document.write("Flávio tem " + (ano - 1977) + " anos");
-    document.write("<br>");
-    document.write("Joaquim tem " + (ano - 1996) + " anos");
-    document.write("<br>");
-    document.write("Barney tem " + (ano - 1976) + " anos");
-    document.write("<br>");
+    // document.write("Flávio tem " + (ano - 1977) + " anos");
+    escreveNaTela("Flávio tem " + (ano - 1977) + " anos");
+
+    // pulaLinha();
+
+    // document.write("Joaquim tem " + (ano - 1996) + " anos");
+    escreveNaTela("Joaquim tem " + (ano - 1996) + " anos");
+
+    // pulaLinha();
+
+   // document.write("Barney tem " + (ano - 1976) + " anos");
+    escreveNaTela("Barney tem " + (ano - 1976) + " anos");
+
+    // pulaLinha();
 
 
     var idadeFlavio = 39;
@@ -28,10 +47,13 @@
 
     var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
 
-    document.write("A média das idades é " + Math.round(media));
-    document.write("<br>");
+    // document.write("A média das idades é " + Math.round(media));
+    escreveNaTela("A média das idades é " + Math.round(media));
+
+    // pulaLinha();
 
     var nome = "Flávio";
 
-    document.write("A idade de " + nome + " é " + idadeFlavio)
+    // document.write("A idade de " + nome + " é " + idadeFlavio);
+    escreveNaTela("A idade de " + nome + " é " + idadeFlavio);
 </script>
