@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostrarFrase(frase){
+        document.write(frase)
+        pulaLinha();
+    }
+
+
+    function calculaMedia (nota1, nota2){
+        var media = (nota1 + nota2) / 2;
+        mostrarFrase("A média final é: " + media + ".");
+    }
+
+
+    calculaMedia(10, 10);
+
+
+</script>

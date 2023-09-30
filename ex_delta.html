@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostrarFrase(frase){
+        document.write(frase)
+        pulaLinha();
+    }   
+
+
+    // DELTA = b² - 4 * a*c
+    function calculaDelta(b,a,c){
+
+        var delta = ((b*b) - [(4 * a) * c]);
+        mostrarFrase("O delta é: " + delta + ".")
+    }
+
+
+    calculaDelta(2,4,-6)
+</script>
