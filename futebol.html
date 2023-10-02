@@ -2,7 +2,7 @@
 
 <script>
   function pulaLinha() {
-    document.write("<br>");
+    document.write("<br><br>");
   }
 
   function mostra(frase) {
@@ -18,5 +18,14 @@
 
   mostra("Os pontos do seu time são: " + pontos)
 
+    if(pontos > 28){
+        mostra("Seu time está melhor que ano passado.");
+    }
+    if(pontos < 28){
+        mostra("Seu time está pior do que ano passado.");
+    }
+    if(pontos == 28){
+        mostra("Seu time está igual ano passado.");
+}
 
 </script>
