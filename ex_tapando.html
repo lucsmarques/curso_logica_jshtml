@@ -33,22 +33,12 @@
 
 
 
-
-<!-- Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?
-
-Vamos criar um programa para resolver a tarefa!
-
-Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
-
-Não esqueça de usar o pulaLinha() e o mostra(). -->
-
-
 <!-- <script>
   function pulaLinha() {
     document.write("<br>");
   }
 
-  function mostra(frase) {
+  function mostrarFrase(frase) {
     document.write(frase);
     pulaLinha();
   }
@@ -56,7 +46,7 @@ Não esqueça de usar o pulaLinha() e o mostra(). -->
   var anoAtual = 2023;
   var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
 
-  mostra(Math.round(quantidadeDeGeracoes));
+  mostrarFrase(Math.round(quantidadeDeGeracoes));
 </script> -->
 
 
@@ -66,24 +56,24 @@ Não esqueça de usar o pulaLinha() e o mostra(). -->
       document.write("<br>");
   }
 
-  function mostra(frase) {
+  function mostrarFrase(frase) {
       document.write(frase);
       pulaLinha();
   }
 
   var contador = 2;
   while(contador <= 100) {
-      mostra(contador);
+      mostrarFrase(contador);
       contador = contador + 2; // incrementa de dois em dois
   }
 </script> -->
 
-<script>
+<!-- <script>
   function pulaLinha() {
       document.write("<br>");
   }
 
-  function mostra(frase) {
+  function mostrarFrase(frase) {
       document.write(frase);
       pulaLinha();
   }
@@ -99,8 +89,29 @@ Não esqueça de usar o pulaLinha() e o mostra(). -->
           contador = contador + 1;
       }
       else {
-      mostra(contador);
+      mostrarFrase(contador);
       contador = contador + 1; 
       }
     }
+</script> -->
+
+<script>
+  function pulaLinha() {
+      document.write("<br>");
+  }
+
+  function mostrarFrase(frase) {
+      document.write(frase);
+      pulaLinha();
+  }
+
+  var contador = 20;
+
+  while( contador >= 0) {
+
+    mostrarFrase(contador);
+    contador = contador - 1;
+  }
+
+  mostra("FIM");
 </script>
