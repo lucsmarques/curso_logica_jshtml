@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostrarFrase(frase){
+        document.write(frase)
+        pulaLinha();
+    }
+
+
+
+
+
+    var limite = parseInt(prompt("Até qual ano você gostaria de saber quando teve ou terá copa? "))
+    var anoCopa = 1930;
+
+    while(anoCopa <= limite ){
+        mostrarFrase(anoCopa);
+        anoCopa = anoCopa + 4; 
+    }
+
+</script>
